@@ -3,109 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio & Proyek Interaktif</title>
+    <title>LAPO SPORTY CARS - Premium Selection</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="hero-section">
+        <div class="overlay"></div>
         <div class="container">
-            <h1 class="fade-in">Halo, Saya [Nama Anda/Tim Anda]</h1>
-            <p class="fade-in delay-1">Pengembang Web Kreatif & Pemecah Masalah Digital.</p>
-            <a href="#projects" class="btn fade-in delay-2">Lihat Proyek Saya</a>
+            <h1 class="fade-in">Temukan Mobil Impian Anda</h1>
+            <p class="fade-in delay-1">Pilihan Terbaik, Layanan Terpercaya.</p>
+            <a href="#featured-cars" class="btn fade-in delay-2">Lihat Koleksi</a>
         </div>
     </header>
 
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Nama Showroom</a>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#featured-cars">Koleksi</a></li>
+                <li><a href="#why-choose-us">Mengapa Kami</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
     <section id="about" class="section">
         <div class="container">
-            <h2>Tentang Saya</h2>
+            <h2>Tentang Showroom Kami</h2>
+            <p class="section-description">Kami adalah showroom mobil premium yang berkomitmen untuk menyediakan pilihan kendaraan berkualitas tinggi dan pengalaman pembelian yang tak tertandingi.</p>
             <div class="about-content">
-                <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
-                <p>Saya adalah seorang individu yang bersemangat dalam dunia pengembangan web, dengan fokus pada menciptakan pengalaman digital yang intuitif dan menarik. Saya percaya bahwa setiap baris kode adalah kesempatan untuk berinovasi dan setiap piksel adalah peluang untuk memukau.</p>
-                <p>Dengan latar belakang yang kuat dalam [Sebutkan Bidang Keahlian, misal: desain UI/UX, front-end development, optimasi performa], saya selalu mencari tantangan baru yang memungkinkan saya untuk belajar dan berkembang.</p>
+                <p>Didirikan pada tahun [Tahun], [Nama Showroom] telah menjadi destinasi terkemuka bagi para pencari mobil mewah dan performa. Kami bangga dengan koleksi kendaraan yang dikurasi secara cermat, memastikan setiap unit memenuhi standar kualitas dan keandalan tertinggi.</p>
+                <p>Tim ahli kami siap membantu Anda menemukan mobil yang sempurna sesuai gaya hidup dan kebutuhan Anda, mulai dari konsultasi hingga layanan purna jual yang profesional.</p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section bg-light">
+    <section id="featured-cars" class="section bg-light">
         <div class="container">
-            <h2>Keahlian Saya</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <h3>Pengembangan Web</h3>
-                    <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design.</p>
+            <h2>Koleksi Unggulan</h2>
+            <p class="section-description">Jelajahi pilihan mobil premium terbaru dan terbaik yang tersedia di showroom kami.</p>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="https://via.placeholder.com/600x400?text=Mobil+Sport" alt="Mobil Sport Mewah">
+                    <h3>Sportscar X 2024</h3>
+                    <p class="car-price">Rp 3.500.000.000</p>
+                    <p class="car-desc">Performa tak tertandingi, desain aerodinamis, interior mewah. Mesin V8 Turbo.</p>
+                    <a href="#" class="car-detail-btn" data-model="Sportscar X">Lihat Detail</a>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-brush"></i>
-                    <h3>Desain UI/UX</h3>
-                    <p>Wireframing, Prototyping, Figma, Adobe XD.</p>
+                <div class="car-card">
+                    <img src="https://via.placeholder.com/600x400?text=SUV+Mewah" alt="SUV Mewah">
+                    <h3>SUV Grandeur 2024</h3>
+                    <p class="car-price">Rp 2.100.000.000</p>
+                    <p class="car-desc">Kenyamanan maksimal, teknologi canggih, cocok untuk petualangan keluarga.</p>
+                    <a href="#" class="car-detail-btn" data-model="SUV Grandeur">Lihat Detail</a>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Optimasi Performa</h3>
-                    <p>Webpack, Gulp, Optimasi Gambar, Lazy Loading.</p>
+                <div class="car-card">
+                    <img src="https://via.placeholder.com/600x400?text=Sedan+Executive" alt="Sedan Executive">
+                    <h3>Executive Sedan Z 2023</h3>
+                    <p class="car-price">Rp 1.850.000.000</p>
+                    <p class="car-desc">Elegan dan bertenaga, pilihan sempurna untuk perjalanan bisnis dan pribadi.</p>
+                    <a href="#" class="car-detail-btn" data-model="Executive Sedan Z">Lihat Detail</a>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend (Konsep)</h3>
-                    <p>Familiar dengan API RESTful, Node.js (untuk konsep static site).</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="section">
+        <div class="container">
+            <h2>Mengapa Memilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Kualitas Terjamin</h3>
+                    <p>Setiap mobil melewati inspeksi ketat untuk memastikan standar kualitas premium.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Layanan Personal</h3>
+                    <p>Tim ahli kami siap memberikan konsultasi dan dukungan khusus untuk Anda.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Pilihan Eksklusif</h3>
+                    <p>Koleksi kendaraan unik dan terbatas yang tidak akan Anda temukan di tempat lain.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="testimonials" class="section bg-light">
         <div class="container">
-            <h2>Proyek Terbaru</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Proyek+Satu" alt="Proyek Satu">
-                    <h3>Aplikasi Manajemen Tugas</h3>
-                    <p>Aplikasi web sederhana untuk mengelola daftar tugas harian. Dibangun dengan HTML, CSS Grid, dan Vanilla JavaScript.</p>
-                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+            <h2>Apa Kata Pelanggan Kami</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p>"Pengalaman membeli di sini sungguh luar biasa! Timnya sangat membantu dan mobilnya persis seperti yang saya impikan."</p>
+                    <h4>- Budi Santoso</h4>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Proyek+Dua" alt="Proyek Dua">
-                    <h3>Website E-commerce Fiktif</h3>
-                    <p>Desain responsif untuk toko online fiktif dengan animasi produk interaktif. Fokus pada UI/UX.</p>
-                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                <div class="testimonial-card">
+                    <p>"Koleksi mobil yang fantastis dan layanan purna jual yang sangat responsif. Sangat direkomendasikan!"</p>
+                    <h4>- Citra Dewi</h4>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Proyek+Tiga" alt="Proyek Tiga">
-                    <h3>Landing Page Produk Startup</h3>
-                    <p>Halaman pendaratan minimalis dan berkonversi tinggi untuk peluncuran produk teknologi baru.</p>
-                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
                 </div>
-            </div>
         </div>
     </section>
 
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="section">
         <div class="container">
-            <h2>Hubungi Saya</h2>
-            <p>Tertarik untuk berkolaborasi atau hanya ingin menyapa? Jangan ragu untuk menghubungi saya!</p>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Nama Anda" required>
-                <input type="email" id="email" placeholder="Email Anda" required>
-                <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
-                <button type="submit" class="btn">Kirim Pesan</button>
-            </form>
-            <div id="form-status" class="form-status"></div>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <h2>Hubungi Kami</h2>
+            <p class="section-description">Kami siap membantu Anda menemukan mobil yang tepat. Silakan hubungi kami atau kunjungi showroom kami.</p>
+            <div class="contact-info-grid">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lokasi Kami</h3>
+                    <p>Jl. Contoh Raya No. 123, Kota Besar, 12345</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Telepon</h3>
+                    <p><a href="tel:+628123456789">+62 812-3456-789</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@namashowroom.com">info@laposhowroom.com</a></p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.388835848268!2d106.8208752147708!3d-6.208763995507569!2m3!1f0!2m3!1f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4305f88923b%3A0x7d0a2d3c9b7e7e7!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1678901234567!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Nama Anda/Tim Anda]. Hak Cipta Dilindungi.</p>
+            <p>&copy; LAPO SPORTY CARS </p>
+            <div class="footer-social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+
+    <div id="carDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-car-title"></h3>
+            <p id="modal-car-description"></p>
+            <p>Untuk informasi lebih lanjut atau ingin mencoba langsung, silakan hubungi kami!</p>
+            <a href="#contact" class="btn modal-contact-btn">Hubungi Sekarang</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
