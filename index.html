@@ -3,15 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakta Acak Harian Anda!</title>
+    <title>Portofolio & Proyek Interaktif</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tahukah Anda?</h1>
-        <p id="fact-display">Klik tombol di bawah untuk fakta menarik!</p>
-        <button id="new-fact-btn">Dapatkan Fakta Baru</button>
-    </div>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="fade-in">Halo, Saya [Nama Anda/Tim Anda]</h1>
+            <p class="fade-in delay-1">Pengembang Web Kreatif & Pemecah Masalah Digital.</p>
+            <a href="#projects" class="btn fade-in delay-2">Lihat Proyek Saya</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+                <p>Saya adalah seorang individu yang bersemangat dalam dunia pengembangan web, dengan fokus pada menciptakan pengalaman digital yang intuitif dan menarik. Saya percaya bahwa setiap baris kode adalah kesempatan untuk berinovasi dan setiap piksel adalah peluang untuk memukau.</p>
+                <p>Dengan latar belakang yang kuat dalam [Sebutkan Bidang Keahlian, misal: desain UI/UX, front-end development, optimasi performa], saya selalu mencari tantangan baru yang memungkinkan saya untuk belajar dan berkembang.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Pengembangan Web</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brush"></i>
+                    <h3>Desain UI/UX</h3>
+                    <p>Wireframing, Prototyping, Figma, Adobe XD.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Optimasi Performa</h3>
+                    <p>Webpack, Gulp, Optimasi Gambar, Lazy Loading.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend (Konsep)</h3>
+                    <p>Familiar dengan API RESTful, Node.js (untuk konsep static site).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Proyek Terbaru</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250?text=Proyek+Satu" alt="Proyek Satu">
+                    <h3>Aplikasi Manajemen Tugas</h3>
+                    <p>Aplikasi web sederhana untuk mengelola daftar tugas harian. Dibangun dengan HTML, CSS Grid, dan Vanilla JavaScript.</p>
+                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250?text=Proyek+Dua" alt="Proyek Dua">
+                    <h3>Website E-commerce Fiktif</h3>
+                    <p>Desain responsif untuk toko online fiktif dengan animasi produk interaktif. Fokus pada UI/UX.</p>
+                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250?text=Proyek+Tiga" alt="Proyek Tiga">
+                    <h3>Landing Page Produk Startup</h3>
+                    <p>Halaman pendaratan minimalis dan berkonversi tinggi untuk peluncuran produk teknologi baru.</p>
+                    <a href="#" class="project-link" target="_blank">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <p>Tertarik untuk berkolaborasi atau hanya ingin menyapa? Jangan ragu untuk menghubungi saya!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Nama Anda/Tim Anda]. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
